@@ -4,8 +4,6 @@ import com.koala.boot.config.SpringConfig;
 import com.koala.boot.config.SpringMVCConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import javax.servlet.ServletRegistration;
-
 /**
  * day03
  * Create by koala on 2021-07-30
@@ -24,12 +22,5 @@ public class QuickAppStarter extends AbstractAnnotationConfigDispatcherServletIn
     @Override //Servlet的映射，DispatcherServlet的映射路径
     protected String[] getServletMappings() {
         return new String[]{"/"};
-    }
-
-    @Override
-    protected void customizeRegistration(ServletRegistration.Dynamic registration) {
-//		super.customizeRegistration(registration);
-
-//		registration.addMapping("");//
     }
 }
